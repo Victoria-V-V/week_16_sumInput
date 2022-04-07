@@ -1,4 +1,4 @@
-const sumInput = function () {
+const sumInput = () => {
     let numbers = [];
     let sum = 0;
 
