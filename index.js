@@ -1,4 +1,4 @@
-function sumInput() {
+const sumInput = function () {
     let numbers = [];
     let sum = 0;
 
@@ -8,8 +8,16 @@ function sumInput() {
         numbers.push(number);
         sum += number;
     }
+
     let numbers2 = numbers.slice();
     numbers2.sort((a, b) => a - b);
 
     alert('Исходный массив ' + numbers + '\n' + 'Отсортированный массив ' + numbers2 + '\n' + 'Сумма: ' + sum);
 }
+
+// btn.onclick = sumInput; - это если через id
+
+const btn = document.querySelector('.btn');
+btn.addEventListener("click", () => {
+    sumInput()
+});
